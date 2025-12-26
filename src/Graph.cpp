@@ -187,10 +187,10 @@ void Graph::saveToFile(std::string filename)
 
     file << "Вершин: " << countVertex() << "\n";
 
-    for (const auto &element : adjList)
+    for (auto &element : adjList)
     {
         int vertex = element.first;
-        const std::vector<int> &neighbors = element.second;
+        std::vector<int> &neighbors = element.second;
 
         file << vertex << ":";
         for (int n : neighbors)
@@ -278,4 +278,5 @@ void Graph::printGraph()
         }
         std::cout << std::endl;
     }
+
 }
