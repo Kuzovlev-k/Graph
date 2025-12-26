@@ -2,7 +2,6 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
-#include <algorithm>
 
 bool contains(std::vector<int> vec, int value)
 {
@@ -280,3 +279,4 @@ void Graph::printGraph()
     }
 
 }
+
